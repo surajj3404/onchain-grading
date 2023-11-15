@@ -1,5 +1,6 @@
 node_modules
 .env
 .encryptedKe
-GradeStorage_sol_*
 .notes.md
+*.abi
+*.bin
