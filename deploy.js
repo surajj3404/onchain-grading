@@ -16,6 +16,8 @@ async function main() {
   const contract = await contractFactory.deploy({
     gasLimit: gasLimit,
   });
+  const transactionReceipt = await contract.deployTransaction.wait("1");
+  console.log("Transaction Receipt: ", transactionReceipt);
   console.log("Here are the detials of the deployed contract", contract);
 }
 
